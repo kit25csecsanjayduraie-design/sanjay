@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberShield | Cyber Safety Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home">🛡 CyberShield</a>
+    <span class="status">● Training Mode</span>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <p class="eyebrow">CYBER AWARENESS LAB</p>
+      <h1>Think Before You <span>Click.</span></h1>
+      <p>Practice recognizing online scams in a safe,
+         interactive learning environment.</p>
+      <a href="#challenges" class="primary-link">Start Training →</a>
+    </section>
+
+    <section class="stats">
+      <article class="stat">
+        <p>Your Score</p>
+        <h2 id="score">0</h2>
+      </article>
+      <article class="stat">
+        <p>Challenges Completed</p>
+        <h2 id="completed">0</h2>
+      </article>
+      <article class="stat">
+        <p>Safety Level</p>
+        <h2 id="level">Beginner</h2>
+      </article>
+    </section>
+
+    <section id="challenges">
+      <h2>Security Challenges</h2>
+      <p class="muted">Choose a challenge to test your knowledge.</p>
+
+      <div class="challenge-grid">
+        <button class="challenge" data-quiz="email">
+          <span class="emoji">📧</span>
+          <h3>Phishing Detective</h3>
+          <p>Spot warning signs in sample emails.</p>
+          <span class="start">Start challenge →</span>
+        </button>
+
+        <button class="challenge" data-quiz="links">
+          <span class="emoji">🔗</span>
+          <h3>Link Inspector</h3>
+          <p>Identify suspicious example URLs.</p>
+          <span class="start">Start challenge →</span>
+        </button>
+
+        <button class="challenge" data-quiz="scams">
+          <span class="emoji">🚨</span>
+          <h3>Scam Awareness</h3>
+          <p>Choose safe responses to scam scenarios.</p>
+          <span class="start">Start challenge →</span>
+        </button>
+
+        <button class="challenge" data-quiz="password">
+          <span class="emoji">🔐</span>
+          <h3>Password Safety</h3>
+          <p>Check password strength on your device.</p>
+          <span class="start">Open checker →</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="workspace" id="workspace" hidden>
+      <button id="back" class="back">← All challenges</button>
+      <div id="activity"></div>
+    </section>
+
+    <section class="tip">
+      <h2>🛡 Golden Rule</h2>
+      <p>Never share your password, OTP, or sensitive
+         personal information with an unverified person.</p>
+    </section>
+
+    <footer>
+      CyberShield © 2026 · Educational simulation only
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
